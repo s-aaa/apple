@@ -163,201 +163,184 @@ ul,li,h1,h2,h3,h4,h5,h6,p,a{
     right:0;
     background: url(../images/bag_small.svg);
 }
-article{
-   width:100%;
-   height:78%;
-   min-height: 650px;
-   background: #fff;
-   position: relative;
-   top:0px;
-   left: 0;
-   z-index: 1;
-   border-bottom: 4px solid #fff;
+#input{
+	display: none;
 }
-article section{
-	width: 100%;
-	height:100%;
-}
-.section-a{
-	display: block;
-	width: 100%;
-	height:100%;
-	position: absolute;
-	top:0;
-	left: 0;
-	z-index: 2;
-
-}
-.section-img{
-	height:458px;
-	margin:44px auto 0;
-	background: url(../images/home_hero_apple_tv_evergreen_medium.jpg) no-repeat center center;
-	background-size: 865px 458px;
-
-}
-.section-wordsbox{
-	height:100px;
-}
-.section-wordsbox:before{
-	content: ' ';
-    display: inline-block;
-    width: 0px;
-    font-size: 0;
-    padding: 0;
-    vertical-align: middle;
-}
-.section-words{
+#xiala{
 	width:100%;
-	height:auto;
-	position: relative;
-	top:-90px;
-	vertical-align: middle;
-    
+	visibility: hidden;
+	padding: 0 50px;
+	box-sizing:border-box;
 }
-.section-words h1{
+
+.ac-familybrowser{
+	width:100%;
+	position: absolute;
+	top:44px;
+	background: rgba(242,242,242,0.6);
+	overflow: hidden;
 	text-align: center;
-	width:136px;
-	height:50px;
-	margin:0 auto 0.25em;
-	background: url(../images/logo_appletv_medium.png) no-repeat;
-    text-indent: -2000px;
-    margin-bottom: 20px;
 }
-.section-words h2{
-    text-align: center;
-    font-size: 42px;
-    color:#333;
-    font-weight: 200;
-    margin-bottom: 20px;
+.ac-familybrowser-wrapper{
+	height:110px;
+	max-width: 100%;
+	margin:0 auto;
+	position: relative;
 }
-.links{
-    text-align: center;
-    font-size:20px;
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: 200;
+.ac-familybrowser-items{
+	margin:0 34px;
 }
-.links li{
-    display: inline-block;
-    margin-left: 0.3em;
-    margin-right: 0.35em;
-    margin-bottom: .5em;
+.ac-familybrowser-items::before{
+	content: ' ';
+	display: table;
 }
-.links a{
-	color:#08c;
-	white-space: nowrap;
-    text-decoration: none;
-    pointer-events: all;
-    display: inline-block;
+.ac-familybrowser-items::after{
+	content: ' ';
+	clear:both;
 }
-.links span:after{
-    content: " ";
-    color: inherit;
-    font-family: 'Apple Icons';
-    font-style: normal;
-    font-weight: inherit;
-    font-size: 1em;
-    line-height: 1;
-    text-decoration: none;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    padding-left: .3em;
-}
-.section-nav{
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    right: 0;
-    background: transparent;
-    height: 40px;
-    display: block;
-    text-align: center;
-    z-index: 3;
-}
-.section-nav ul{
+.ac-familybrowser-item{
+	padding-left:20px;
+	padding-right:20px;
 	display: inline-block;
 }
-.section-nav li{
-	float: left;
-	width:8px;
-	height:8px;
-	margin:0 10px;
+.ac-familybrowser-item.macbook{
+	padding-left:22px;
+	padding-right:22px;
+}
+.ac-familybrowser-item.macbookair{
+	padding-left:18px;
+	padding-right:18px;
+}
+.ac-familybrowser-item.macbookpro{
+	padding-left:18px;
+	padding-right:18px;
+}
+.ac-familybrowser-item.imac{
+	padding-left:22px;
+	padding-right:22px;
+}
+.ac-familybrowser-item.macpro{
+	padding-left:18px;
+	padding-right:18px;
+}
+.ac-familybrowser-item.macmini{
+	padding-left:16px;
+	padding-right:16px;
+}
+.ac-familybrowser-item.accessories{
+	padding-left:20px;
+	padding-right:20px;
+}
+.ac-familybrowser-item.osxeicapitan{
+	padding-left:8px;
+	padding-right:8px;
+}
+.ac-familybrowser-item.compare{
+	padding-left:18px;
+	padding-right:18px;
+}
+.ac-familybrowser-items :first-child{
+	padding-left: 0; 
+}
+.ac-familybrowser-items :last-child{
+	padding-right: 0; 
+}
+.ac-familybrowser-link{
 	position: relative;
-}
-.section-nav-a{
-	position: absolute;
-    top: 0;
-    left: 0;
-    width: 8px;
-    height: 8px;
-    outline: none;
-    border-radius: 50%;
-    background-color: #999;
-    font: 0/0 a;
-    color: transparent;
-}
-.asides{
-	max-width: 2560px;
-    margin: 0 auto;
-}
-.asides ul{
-    margin: 0;
-    position: relative;
-}
-.asides ul:before{
-	content: " ";
-	display:table;
-}
-.asides li{
-	float: left;
-	width:25%;
-	min-height:2px;
-    height:auto;
     z-index: 1;
-    border-bottom:2px solid #fff;
+    display: inline-block;
+    margin-top: 13px;
+    margin-bottom: 26px;
+    vertical-align: top;
+    color: inherit;
 }
-.asides-a{
+.ac-familybrowser-icon{
+	margin:0 auto;
 	display: block;
-	height:200px;
-	width: auto;
-	border-right:1px solid #fff;
-	border-left:1px solid #fff;
-    background-size: 640px 200px;
-    font:0/0 a;
+	height:52px;
+	background-position: center bottom;
 }
-.asides-a-one{
-	border-left: none;
-	background: url(../images/promo_holiday_watch_large.jpg) center center;
+.ac-familybrowser-item.macbook .ac-familybrowser-icon{
+	background:url(../images/macbook_large.svg) no-repeat;
+	background-size:46px 54px;
+	height:54px;
+	width:46px;
 }
-.asides-a-two{
-	background: url(../images/promo_ios93preview_large.jpg) center center;
+.ac-familybrowser-item.macbookair .ac-familybrowser-icon{
+	background:url(../images/macbookair_large.svg) no-repeat;
+	background-size:52px 54px;
+	height:54px;
+	width:52px;
 }
-.asides-a-three{
-	background: url(../images/promo_macbook_large.jpg)center center;
+.ac-familybrowser-item.macbookpro .ac-familybrowser-icon{
+	background:url(../images/macbookpro_large.svg) no-repeat;
+	background-size:58px 54px;
+	height:54px;
+	width:58px;
 }
-.asides-a-four{
-	border-right: none;
-	background: url(../images/promo_startsomethingnew_iphone6s_large.jpg)center center;
+.ac-familybrowser-item.imac .ac-familybrowser-icon{
+	background:url(../images/imac_large.svg) no-repeat;
+	background-size:48px 54px;
+	height:54px;
+	width:48px;
 }
-
-.asides ul:after{
-		content: " ";
-		clear: both;
-		display: block;
-	}
+.ac-familybrowser-item.macpro .ac-familybrowser-icon{
+	background:url(../images/macpro_large.svg) no-repeat;
+	background-size:21px 54px;
+	height:54px;
+	width:21px;
+}
+.ac-familybrowser-item.macmini .ac-familybrowser-icon{
+	background:url(../images/macmini_large.svg) no-repeat;
+	background-size:28px 54px;
+	height:54px;
+	width:28px;
+}
+.ac-familybrowser-item.accessories .ac-familybrowser-icon{
+	background:url(../images/mac_acc_large.svg) no-repeat;
+	background-size:28px 54px;
+	height:54px;
+	width:28px;
+}
+.ac-familybrowser-item.osxeicapitan .ac-familybrowser-icon{
+	background:url(../images/mac_osx_large.svg) no-repeat;
+	background-size:30px 54px;
+	height:54px;
+	width:30px;
+}
+.ac-familybrowser-item.compare .ac-familybrowser-icon{
+	background:url(../images/mac_comp_large.svg) no-repeat;
+	background-size:70px 54px;
+	height:54px;
+	width:70px;
+}
+.ac-familyborwser-label{
+	font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: normal;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 8px;
+    white-space: normal;
+    color: #333;
+}
+.main.update{
+    overflow: hidden;
+}
 .footers{
-		background: #f2f2f2;
-		font-size: 12px;
-	    line-height: 1.66667;
-	    font-weight: 400;
-	    letter-spacing: normal;
-	    color: #666;
-	    /* min-width: 1024px; */
-	    overflow: hidden;
-	    position: relative;
-	    z-index: 1;
-	}
+	background: #f2f2f2;
+	font-size: 12px;
+    line-height: 1.66667;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: #666;
+    /* min-width: 1024px; */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
 	.footer-con{
 		margin:0 auto;
 		padding: 0 22px;
@@ -459,17 +442,9 @@ article section{
 	display: table;
 	clear:both;
 }
-#input{
-	display: none;
+.ac-gf-breadcrumbs{
+	padding:20px 0;
 }
-#xiala{
-	width:100%;
-	visibility: hidden;
-	padding: 0 50px;
-	box-sizing:border-box;
-}
-
-
 @media (max-width: 1070px){
 	.asides li{
 		width:50%;
@@ -622,7 +597,6 @@ article section{
     	float: none;
     }
 }
-
 #input-sl{
 	display: none;
 }
